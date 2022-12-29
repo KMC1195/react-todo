@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import useFetch from "./useFetch";
-const axios = require("axios");
 
 const Todos = () => {
   const { todos, isPending, error } = useFetch("http://localhost:8000/todos");

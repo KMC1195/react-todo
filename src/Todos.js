@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const Todos = () => {
@@ -9,10 +10,15 @@ const Todos = () => {
         {todos &&
           todos.map((todo) => (
             <div
-              className="border-solid border-4 py-3 w-95% m-3 rounded border-teal-700"
+              className="border-solid border-4 py-3 w-95% m-3 rounded border-teal-700 flex"
               key={todo.id}
             >
-              <h1 className="text-4xl text-center">{todo.name}</h1>
+              <h1 className="text-4xl text-center p-3 inline">{todo.name}</h1>
+              <Link to={`/${todo.id}`}>
+                <button className="px-2 border-solid border-2 h-12 mt-2 ml-3 border-black rounded">
+                  Details...
+                </button>
+              </Link>
             </div>
           ))}
       </div>

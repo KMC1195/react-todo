@@ -2,6 +2,7 @@ import Todos from "./Todos";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from "./Create";
 import { Link } from "react-router-dom";
+import BlogDetails from "./BlogDetails";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/create">
           <Create />
+        </Route>
+        <Route path="/:id">
+          <BlogDetails />
         </Route>
       </Switch>
     </Router>

@@ -1,24 +1,3 @@
 {
-  "todos": [
-    {
-      "name": "test",
-      "description": "test",
-      "id": 1
-    },
-    {
-      "name": "tes",
-      "description": "tadfs",
-      "id": 2
-    },
-    {
-      "name": "tesaf",
-      "description": "asdfasfd",
-      "id": 3
-    },
-    {
-      "name": "KMC",
-      "description": "asfdasdfsafasasdfasfdsaf",
-      "id": 4
-    }
-  ]
+  "todos": []
 }
